@@ -27,7 +27,7 @@ Now that we have our first OU, just repeat the steps for two more OUs and name t
 
 Once we have created them, we can see under our domain name, we have 3 new OUs.
 
-<img src="https://i.imgur.com/zBgVfqk.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+<img src="https://i.imgur.com/zBgVfqk.png" height="40%" width="40%" alt="VirtualBox downloads"/>
 
 Let's move onto Users to populate these OUs.
 
@@ -45,7 +45,7 @@ Next we will set a password for John Doe. Here you can see there are multiple bo
 
 Now let's repeat the steps for a second user named Jane Smith. Once complete we will have 2 users in the IT OU.
 
-<img src="https://i.imgur.com/yNEDiIs.png" height="30%" width="30%" alt="VirtualBox downloads"/>
+<img src="https://i.imgur.com/yNEDiIs.png" height="40%" width="40%" alt="VirtualBox downloads"/>
 
 
 
