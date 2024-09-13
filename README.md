@@ -113,3 +113,53 @@ Creating a Password Policy and Account Lockout Policy helps improve security:
 - Password Policy: Enforces rules like complexity, length, and expiration for user passwords. This ensures that users create strong, harder to guess passwords, reducing the chance of unauthorized access to sensitive systems or data.
 
 - Account Lockout Policy: Locks a user account after a set number of incorrect login attempts. This prevents attackers from using brute-force methods to guess passwords, improving protection against attacks targeting user accounts. 
+
+So to get started, open Group Policy Management and Create a new GPO by right-clicking the domain and selecting Create a GPO in this Domain, and Link it here.
+
+<img src="https://i.imgur.com/NmQWFQO.png" height="40%" width="40%" alt="VirtualBox downloads"/>
+
+Next, navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy.
+
+<img src="https://i.imgur.com/iA5NMCo.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Here we will confiugre multiple policies to create a well balanced password GPO. First we will click and edit the Minimum password length properties to be 8 characters. This means a minimum of 8 characters is needed for every password.
+
+<img src="https://i.imgur.com/bOvIZ8S.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/U9e0DBh.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Next we will set a Maximum Password Age. This means every password will expire and need to be changed after every 60 days in our case.
+
+<img src="https://i.imgur.com/nDuElcU.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+After some adjustments here is what we have for our Password policies:
+
+<img src="https://i.imgur.com/jIiM8ui.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+We have enabled the following:
+
+- Enforce password history - 0 passwords remembered: Users can reuse their previous passwords immediately, as no history of old passwords is kept.
+- Maximum password age - 60 days: Users are required to change their passwords every 60 days.
+- Minimum password age - 30 days: Users must keep a password for at least 30 days before changing it.
+- Minimum password length - 8 characters: Passwords must be at least 8 characters long.
+- Password must meet complexity requirements - Enabled: Passwords must include a combination of letters, numbers, and symbols to ensure they are harder to guess.
+
+These policies help ensure password security by requiring regular updates and strong password criteria.
+
+Now that we have completed the password policies, lets enable some Account Lockout Policies. Beneath the Password Policy selection in the left pane of the Group Policy Management Editor is the Account Lockout Policy. 
+
+Here we can adjust the Account lockout duration, Account lockout threshold, and Reset account lockout counter after (a certain amount of time). 
+
+<img src="https://i.imgur.com/90I2AXb.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Here’s a simple explanation of the account lockout settings:
+
+- Account lockout duration: The amount of time (in minutes) that a user’s account remains locked after too many failed login attempts. After this time, the account unlocks automatically.
+- Account lockout threshold: The number of failed login attempts before the account gets locked. For example, if this is set to 5, the account will lock after 5 incorrect password attempts.
+- Reset account lockout counter after: The time (in minutes) that must pass before the counter resets back to zero. If a user enters incorrect passwords over time, the counter will reset if they don’t reach the threshold within the set time.
+  
+These settings help protect against brute-force attacks by locking accounts after multiple failed attempts.
+
+
+## Conclusion
+We have successfully implemented user and group management, and enforced security policies through Group Policy to our Active Directory environment. This project replicates a real-world IT infrastructure used in businesses to manage user access and security across an organization. 
