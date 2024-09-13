@@ -28,3 +28,25 @@ Now that we have our first OU, just repeat the steps for two more OUs and name t
 Once we have created them, we can see under our domain name, we have 3 new OUs.
 
 <img src="https://i.imgur.com/zBgVfqk.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Let's move onto Users to populate these OUs.
+
+- Users are individual accounts created for each person or service accessing resources within the network. User accounts control access to applications, files, and services based on the permissions assigned to them.
+
+Right click on the IT OU and select New > User. A window will pop up allowing us to fill in the information for the new User. Let's name him John Doe and set the logon name to the first initial and then last name. Click Next when finished.
+
+<img src="https://i.imgur.com/dEsSyHP.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Next we will set a password for John Doe. Here you can see there are multiple boxes we can check or uncheck to apply certain options to the account. For now we will leave them alone and maintain the default choices. Click Next, and then on the final menu click Finish if everything looks good.
+
+<img src="https://i.imgur.com/snjN4Xc.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/ZN8ceav.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Now let's repeat the steps for a second user named Jane Smith. Once complete we will have 2 users in the IT OU.
+
+<img src="https://i.imgur.com/yNEDiIs.png" height="30%" width="30%" alt="VirtualBox downloads"/>
+
+
+
+
