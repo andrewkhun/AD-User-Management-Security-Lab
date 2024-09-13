@@ -71,3 +71,35 @@ Type in the names you want to add, in our case it will be Jane Smith and John Do
 Once added, we can check the IT_Admins Properties to make sure our Users have joined the group successfully.
 
 <img src="https://i.imgur.com/RPPj7uw.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Let's move onto Group Policy!
+
+
+## Configure Group Policy to Disable USB Access and Removeable Storage Access
+
+Group Policy is a featured used to control the working environment of user accounts and computer accounts. It enables administrators to define security settings, software installations, password policies, desktop settings, and more across multiple users or computers in the network, ensuring consistency and security.
+
+- Group Policy Objects or GPOs are collections of settings that administrators can apply to OUs, groups, or individual computers, and users. GPOs enforce rules such as password complexity, lockout thresholds, software restrictions, or system configurations without needing manual updates on each machine.
+
+So why do we want to disable USB and Removable Storage access through a Group Policy?
+
+- Blocking USBs and Storage Devices helps to stop unauthorized copying of sensitive company data or personal information onto portable drives. USBs and Drives can also carry malware that may infect the machine and move onto the network. Disabling both ensures for a safer environment.
+
+First start off by searching for Group Policy Management in the Start menu and opening it. Once opened, right-click the IT OU in the console and select create a GPO in this Domain and Link it here. Name the policy Disable USB Access.
+
+<img src="https://i.imgur.com/cAtynx6.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/hTfF031.png" height="40%" width="40%" alt="VirtualBox downloads"/>
+
+Click OK when finished. Next we have to edit the GPO. Right-click the GPO and click Edit. 
+
+Navigate to Computer Configuration > Policies > Administrative Templates > System > Removable Storage Access
+
+Enable the All Removable Storage Classes: Deny all access
+
+<img src="https://i.imgur.com/benctXJ.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/ptTgRLK.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/XvCWVVo.png" height="40%" width="40%" alt="VirtualBox downloads"/>
+
