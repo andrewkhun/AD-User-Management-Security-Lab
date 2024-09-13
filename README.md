@@ -107,3 +107,9 @@ We have successfully created a Group Policy to deny Removable Storage Access! Le
 
 
 ## Password Policy and Account Lockout Policy
+
+Creating a Password Policy and Account Lockout Policy helps improve security:
+
+- Password Policy: Enforces rules like complexity, length, and expiration for user passwords. This ensures that users create strong, harder to guess passwords, reducing the chance of unauthorized access to sensitive systems or data.
+
+- Account Lockout Policy: Locks a user account after a set number of incorrect login attempts. This prevents attackers from using brute-force methods to guess passwords, improving protection against attacks targeting user accounts. 
