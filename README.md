@@ -103,3 +103,7 @@ Enable the All Removable Storage Classes: Deny all access
 
 <img src="https://i.imgur.com/XvCWVVo.png" height="40%" width="40%" alt="VirtualBox downloads"/>
 
+We have successfully created a Group Policy to deny Removable Storage Access! Let's now create one for our Password Policy and Account Lockout Policy.
+
+
+## Password Policy and Account Lockout Policy
