@@ -47,6 +47,27 @@ Now let's repeat the steps for a second user named Jane Smith. Once complete we 
 
 <img src="https://i.imgur.com/yNEDiIs.png" height="40%" width="40%" alt="VirtualBox downloads"/>
 
+Now that we have our Users, let's create a new Group for them to join!
 
+- Groups: Groups are collections of users, computers, or other AD objects. They simplify management by allowing administrators to assign permissions or policies to multiple objects at once instead of handling each individually. There are two main types:
 
+  - Security Groups: Control access to resources like files or systems.
+  - Distribution Groups: Used for email distribution lists.
 
+In the IT OU, right-click and slect New > Group. Create a Security Group and name it IT_Admins. Set the Group Scope to Global and Group type to Security.
+
+<img src="https://i.imgur.com/pvKFT9y.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+<img src="https://i.imgur.com/T4kymbq.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Once the group has been created, right-click on IT_Admins, and select Properties in order to add Users to the Group.
+
+<img src="https://i.imgur.com/9UD1QhH.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Type in the names you want to add, in our case it will be Jane Smith and John Doe. We can select Check Names to make sure the names are correct. Do the same for both users.
+
+<img src="https://i.imgur.com/WhQJmQA.png" height="70%" width="70%" alt="VirtualBox downloads"/>
+
+Once added, we can check the IT_Admins Properties to make sure our Users have joined the group successfully.
+
+<img src="https://i.imgur.com/RPPj7uw.png" height="70%" width="70%" alt="VirtualBox downloads"/>
